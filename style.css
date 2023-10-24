@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.571), rgba(143, 155, 159, 0.543)),
+    url(/Source/semi-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.nav-bar {
+    width: 90%;
+    padding: 30px;
+    display: flex;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    left: 35px 0;
+}
+
+nav{
+    flex: 1;
+    text-align: end;
+}
+
+nav ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin-left: 36px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #e3dfdf;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #24262b;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+} 
+
+.big-heading {
+    color: rgb(254, 210, 51);
+    font-size: 4rem;
+    font-family: cursive;
+    text-align: center;
+}
+
+.container {
+    margin: 50px;
+    /* text-align-last: end; */
+    font-size: 1.2rem;
+    /* padding-left: 175px; */
+}
+
+.content {
+    color: rgb(190, 197, 204);
+    font-size: 1.5rem;
+    padding-left: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.btn  {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3rem;
+    background: rgb(248, 213, 42);
+    padding: 10px;
+    width: 170px;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-inline: auto
+    ;
+}
+
+.btn-text {
+    color: black;
+    text-decoration: none;
+}
+
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.best-seller {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(235, 236, 237);
+}
+
+.top {
+    margin: 0 15rem auto 15rem;
+    text-align: center;
+    
+    padding-top: 3rem;
+}
+
+.top-title {
+    color: rgb(54, 53, 53);
+    font-family: cursive;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.top-text {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 260px;
+    margin: 1.2rem;
+}
+
+h4 {
+    font-family: cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+
+.card-img {
+    height: 250px;
+}
+
+.card-text {
+    margin-top: 1rem;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.trending-item {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(50, 56, 62);
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    margin: 5rem;
+    padding-right: 5rem;
+}
+
+.item-img {
+    height: 300px;
+    margin-right: 2rem;
+}
+
+.statistics {
+    background-color: rgb(37, 43, 50);
+    color: blanchedalmond;
+}
+
+h2 {
+    color: rgb(241, 236, 236);
+    font-family: cursive;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border: solid rgb(250, 250, 250) 3px;
+    border-radius: 100px;
+    margin: 1.2rem;
+}
+
+.box-data {
+    margin: 35px;
+    text-align: center;
+}
+
+.data {
+    color: rgb(218, 185, 38);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-top: 10px;
+    color: blanchedalmond;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.subscribe {
+    background-color: rgb(172, 172, 174);
+}
+
+.input {
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.button {
+    height: 40px;
+    width: 150px;
+    background-color: #ffea02;
+    border: none;
+    color: rgb(4, 4, 4);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(225, 217, 217, 0.24),0 17px 50px 0 rgba(254, 254, 254, 0.19);
+  }
+form {
+    text-align: center;
+    padding: 70px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 23%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #f8f6f6;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+    position: relative;
+    text-align: start;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.footer-col .text p {
+    color: rgb(208, 190, 190);
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width :900px) {
+    .container {
+        padding: 50px;
+    }
+
+    .content {
+        color: rgb(190, 197, 204);
+        font-size: 1.5rem;
+        padding-left: 0px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 3rem;
+    }
+    .top {
+        margin: 0 1.2rem auto 1.2rem;
+    }
+
+    .main-page {
+        background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.571), rgba(143, 155, 159, 0.543)),
+    url('/Source/semi-background.png');
+    }
+
+    .container {
+        margin-top: auto 2rem;
+        margin: 0;
+    }
+
+    .nav-bar {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 90px;
+        height: 40px;
+    }
+
+    .content {
+        margin-top: 2rem;
+    }
+
+    .trending-item {
+        flex-direction: column-reverse;
+    }
+
+    .item {
+        margin: 2rem;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .item-img {
+        height: 200px;
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+
+    .btn {
+        width: 100px;
+        font-size: small;
+        margin-top: 2rem;
+        margin-inline: auto;
+    }
+
+    .big-heading {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px){
+    .container {
+        padding: 50px;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .content {
+        color: rgb(190, 197, 204);
+        font-size: 1.5rem;
+        padding-left: 50px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 3rem;
+    }
+	.footer-col{
+    	width: 50%;
+    	margin-bottom: 30px;
+	}
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 574px){
+    .container {
+        padding: 10px;
+        
+    }
+
+    .content {
+        color: rgb(190, 197, 204);
+        font-size: 1.5rem;
+        padding-left: 0px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 3rem;
+    }
+	.footer-col{
+    	width: 100%;
+	}
+    
+    .input {
+        width: 200px;
+        height: 30px;
+        text-decoration: none;
+    }
+    .button {
+        height: 30px;
+        width: 100px;
+        background-color: #ffea02;
+        border: none;
+        color: rgb(4, 4, 4);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 10px ;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+}
